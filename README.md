@@ -50,8 +50,7 @@ Before using the Wayback Wordpress Importer, ensure you have the following prere
 2. Clone the Wayback Wordpress Importer repository into the root folder of your downloaded website:
 
   ```sh
-  git clone https://github.com/itxZahidRajput/wayback-wordpress- 
-  importer.git
+  git clone https://github.com/itxZahidRajput/wayback-wordpress-importer.git
   ```
 
 ## Usage
@@ -85,20 +84,15 @@ Use your new website address in place for ```https://www.example.com```.
 
   ET.SubElement(channel, "title").text = "Website Title"
   ET.SubElement(channel, "link").text = "https://www.example.com"
-  ET.SubElement(channel, "wp:base_site_url").text = 
-  "https://www.example.com"
-  ET.SubElement(channel, "wp:base_blog_url").text = 
-  "https://www.example.com"
+  ET.SubElement(channel, "wp:base_site_url").text ="https://www.example.com"
+  ET.SubElement(channel, "wp:base_blog_url").text ="https://www.example.com"
   ET.SubElement(author, "wp:author_id").text = "1"
 
   ET.SubElement(author, "wp:author_login").text = "Author Login"
   ET.SubElement(author, "wp:author_email").text = "Author Email"
-  ET.SubElement(author, "wp:author_display_name").text = "Author 
-  Display Name"
-  ET.SubElement(author, "wp:author_first_name").text = "Author First 
-  name"
-  ET.SubElement(author, "wp:author_last_name").text = "Author Last 
-  Name"
+  ET.SubElement(author, "wp:author_display_name").text = "Author Display Name"
+  ET.SubElement(author, "wp:author_first_name").text = "Author First Name"
+  ET.SubElement(author, "wp:author_last_name").text = "Author Last Name"
   ```
 
 6- **Generate XML File:** Run the ```publish.py``` script to convert all HTML files into a single XML file named **'output.xml'** in ```root/output/articles``` folder. This XML file can be imported into your WordPress website.
