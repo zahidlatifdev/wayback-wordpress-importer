@@ -51,7 +51,7 @@ Before using the Wayback Wordpress Importer, ensure you have the following prere
 
   ```sh
   git clone https://github.com/itxZahidRajput/wayback-wordpress- 
-  importer
+  importer.git
   ```
 
 ## Usage
